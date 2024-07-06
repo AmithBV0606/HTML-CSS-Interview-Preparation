@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+            color: black;
+            margin: 10px;
+        }
+
+        th,td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #b5b4b4;
+        }
+/* 
+        tr:nth-child(odd) {
+            background-color: rgb(204, 213, 222);
+        } */
+    </style>
+</head>
+<body>
+    <table>
+        <caption>
+            Council budget (in £) 2018
+          </caption>
+
+        <colgroup>
+            <col span="2" style="background-color: aquamarine;"/>
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th>Country</th>
+                <th>Country Code</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>India</td>
+                <td>IN</td>
+                <td>abc@gmail.com</td>
+            </tr>
+    
+            <tr>
+                <td>Russia</td>
+                <td>RU</td>
+                <td>def@gmail.com</td>
+            </tr>
+    
+            <tr>
+                <td>Japan</td>
+                <td>JP</td>
+                <td>ghi@gmail.com</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <th>Total</th>
+            <td>---</td>
+            <td>21,200</td>
+        </tfoot>
+    </table>
+
+    <table style="width: 50%;">
+        <tr>
+            <th rowspan="2">Country</th>
+            <td>India</td>
+            <td>Japan</td>
+        </tr>
+        <tr>
+            <th colspan="2">CODE</th>
+            <td>IN</td>
+            <td>JP</td>
+        </tr>
+    </table>
+</body>
+</html>
