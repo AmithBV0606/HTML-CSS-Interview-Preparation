@@ -1,0 +1,93 @@
+<!-- Sigma Web Development Course - Tutorial #38 -->
+<!-- CSS Flexbox - Ultimate MasterClass-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Box</title>
+    <style>
+        .container {
+            height: 80vh;
+            border: 2px solid rgb(190, 33, 33);
+            /* Flex-box Container properties :  */
+            display: flex;
+            flex-direction:row;
+            justify-content: center;
+            align-items: center;
+            /* _________________________ */
+            flex-wrap: wrap;
+            /* align-content:center; */
+            /* Syntax : flex-flow : <flex-direction><flex-wrap> */
+            flex-flow: row wrap;
+            /* ___________________________ */
+            /* To provide spacing between the items */
+            /* gap: 30px; */
+            row-gap: 20px;
+            column-gap:0px;
+        }
+        .item {
+            height: 50px;
+            width: 50px;
+            background-color: black;
+            color: white;
+            border: 2px solid rgb(138, 135, 135);
+            border-radius: 10px;
+            /* margin: 4px; */
+            text-align: center;
+            
+            /* Flex-box items properties :  */
+               /* flex-grow: 1; */
+               flex-shrink: 2;
+        }
+        .order-1{
+             /* Flex-box items properties :  */
+            order: 1;
+        }
+        .order-2{
+            order: 2;
+        }
+        .order-3{
+            order: 3;
+            align-self: flex-end;
+        }
+        .order-100 {
+            order: 100;
+            flex-grow: 5;
+        }
+        .item-n {
+            align-self: flex-start;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="item order-100">B1</div>
+            <div class="item order-3">B2</div>
+            <div class="item order-2">B3</div>
+            <div class="item order-1">B4</div>
+            <div class="item item-n">B5</div>
+            <div class="item">B6</div>
+            <div class="item">B7</div>
+            <div class="item">B8</div>
+            <div class="item">B9</div>
+            <div class="item">B10</div>
+            <div class="item">B11</div>
+            <div class="item">B12</div>
+            <div class="item">B13</div>
+            <div class="item">B14</div>
+            <div class="item">B15</div>
+            <div class="item">B16</div>
+            <div class="item">B17</div>
+            <div class="item">B18</div>
+            <div class="item">B19</div>
+            <div class="item">B20</div>
+        </div>
+    </main>
+</body>
+
+</html>
