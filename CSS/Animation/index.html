@@ -1,0 +1,70 @@
+<!-- Sigma Web Development Course - Tutorial #46 -->
+<!-- CSS Animation Property-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation in CSS</title>
+    <style>
+        .container {
+            height: 80vh;
+            width: 30vh;
+            background-color: darkcyan;
+        }
+
+        .box {
+            height: 45px;
+            width: 34px;
+            background-color: black;
+            animation: amithKaaAnimation 3s ease-in 1s 1 alternate backwards,
+                amith2 3s ease-in 1s 2;
+        }
+
+        @keyframes amithKaaAnimation {
+            from {
+                transform: translateX(10px) translateY(10px);
+            }
+
+            to {
+                transform: translateX(100px) translateY(500px);
+                background-color: cornflowerblue;
+            }
+        }
+
+        @keyframes amith2 {
+
+            0% {
+                transform: rotate(45deg);
+            }
+
+            25% {
+                transform: rotate(90deg);
+            }
+
+            50% {
+                transform: rotate(180deg);
+            }
+
+            75% {
+                transform: rotate(240deg);
+            }
+
+            100% {
+                transform: rotate(90deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+
+</html>
