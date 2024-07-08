@@ -1,0 +1,84 @@
+<!-- Sigma Web Development Course - Tutorial #42 -->
+<!-- CSS Transforms MasterClass-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tansform Property in CSS</title>
+    <style>
+        .container {
+            height: 80vh;
+            width: 100vw;
+            border: 2px solid;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 2px solid;
+            border-radius: 10px;
+            background-color: aquamarine;
+        }
+
+        .box-1 {
+            transform-origin: -104% -0%;
+            transform: rotate(688deg);
+        }
+
+        .box-2 {
+            /* Transfor property :  */
+            /* 1) Rotate */
+            transform: rotate(45deg);
+            transform: rotate(0.25turn);
+            /* 0.25turn = 90deg, 0.5turn = 180deg 1turn = 360deg*/
+            transform: rotateX(45deg);
+            transform: rotateY(45deg);
+            transform: rotateZ(45deg);
+        }
+        .box-3 {
+            /* 2) Scale  */
+            transform: scale(1.5);
+            /* transform: scaleX(0.75);
+            transform: scaleY(0.75);
+            transform: scaleZ(0.75); */
+        }
+
+        .box-4 {
+            /* 3) Skew */
+            transform: skew(15deg);
+            transform: skewX(15deg);
+            transform: skewY(15deg);
+            /* Skew property is not applicable for  Z - axis */
+        }
+
+        .box-5 {
+            /* 4) Translate */
+            transform: translate(25%);
+            transform: translateX(25px);
+            transform: translateY(75%);
+            transform: translateZ(50%); 
+            /* Shorthand for transition
+            /* transform: translateX() skewX() translateY(); */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box-1">Box 1</div>
+        <div class="box box-2">Box 2</div>
+        <div class="box box-3">Box 3</div>
+        <div class="box box-4">Box 4</div>
+        <div class="box box-5">Box 5</div>
+    </div>
+</body>
+
+</html>
