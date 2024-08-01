@@ -1,2 +1,3 @@
 # PrePlaced-Week-2
-Week-2 of preplaced mentorship, topics covered are HTML, CSS and JavaScript
+
+Practicing HTML and CSS concepts as the interview for Frontend Engineer is nearby.
