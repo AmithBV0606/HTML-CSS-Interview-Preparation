@@ -1,1 +1,0 @@
-### To view the Project, folllow this link : https://github.com/AmithBV0606/Mini-Portfolio 
